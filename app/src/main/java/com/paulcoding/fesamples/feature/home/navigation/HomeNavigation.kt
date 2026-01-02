@@ -9,8 +9,8 @@ import androidx.navigation.compose.composable
 import com.paulcoding.fesamples.core.ui.Routes
 import com.paulcoding.fesamples.feature.home.HomeScreen
 
-fun NavController.navigateToHome(navOptions: NavOptions) =
-    navigate(route = Routes.Home, navOptions)
+fun NavController.navigateToHome() =
+    navigate(route = Routes.Home)
 
 fun NavGraphBuilder.homeScreen() {
     composable<Routes.Home>(

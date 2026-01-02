@@ -7,4 +7,8 @@ object Routes {
     @Serializable
     @Immutable
     object Home
+
+    @Serializable
+    @Immutable
+    object Main
 }
