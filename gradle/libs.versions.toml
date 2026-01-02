@@ -18,6 +18,8 @@ material = "1.13.0"
 kotlinx-serialization = "1.8.0"
 coroutines = "1.10.1"
 navigation = "2.8.9"
+cameraCompose = "1.5.1"
+accompanist-permissions = "0.34.0"
 
 [libraries]
 
@@ -77,6 +79,17 @@ kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-
 # navigation
 androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation" }
 androidx-navigation-runtime-ktx = { group = "androidx.navigation", name = "navigation-runtime-ktx", version.ref = "navigation" }
+
+# camera
+androidx-camera-camera2 = { module = "androidx.camera:camera-camera2", version.ref = "cameraCompose" }
+androidx-camera-compose = { module = "androidx.camera:camera-compose", version.ref = "cameraCompose" }
+androidx-camera-lifecycle = { module = "androidx.camera:camera-lifecycle", version.ref = "cameraCompose" }
+androidx-camera-core = { module = "androidx.camera:camera-core", version.ref = "cameraCompose" }
+androidx-camera-viewfinder-core = { module = "androidx.camera.viewfinder:viewfinder-core", version.ref = "cameraCompose" }
+androidx-camera-viewfinder-compose = { module = "androidx.camera.viewfinder:viewfinder-compose", version.ref = "cameraCompose" }
+
+# permission
+accompanist-permissions = { group = "com.google.accompanist", name = "accompanist-permissions", version.ref = "accompanist-permissions" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
